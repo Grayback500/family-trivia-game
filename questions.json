@@ -1,0 +1,27 @@
+{
+    "categories": {
+        "General Knowledge": [
+            {
+            "question": "What is the capital of France?",
+            "options": ["London", "Paris", "Berlin", "Madrid"],
+            "answer": 1,
+            "difficulty": "easy"
+            }
+        ]
+        "World History": [
+            {
+                "question": "What was the first nation to send an astronaut to space?",
+                "options": ["China", "United States", "Germany", "Soviet Union"],
+                "answer": 3
+                "difficulty": "medium"
+            }
+        ]
+        "Pop Culture": [
+            {
+                "question": "Which Hemsworth brother plays Thor in the Marvel Cinematic Universe?",
+                "options": ["Chris", "Luke", "Liam"],
+                "answer": 0
+                "difficulty": "easy"
+            }
+        ]
+}

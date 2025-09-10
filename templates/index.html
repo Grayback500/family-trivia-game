@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="game-container">
+    <h2>Welcome to Family Trivia!</h2>
+    <div id="question-display">
+        <p>Click the button below to get a question</p>
+    </div>
+    <button onclick="loadQuestion()">Get Question</button>
+</div>
+
+<script>
+ function loadQuestion() {
+     fetch('/api/question')
+         .then(response => response.json())
+         .then(data => {
+             document.getElementById('question-display').innerHTML = `
+                 <h3>${data.category} (${data.difficulty})</h3>
+                 <p>${data.question}</p>
+                 <ul>
+                     ${data.options.map(option => `<li>${option}</li>`).join('')}
+                </ul>
+                     `;
+         });
+ }
+</script>
+{% endblock %}
